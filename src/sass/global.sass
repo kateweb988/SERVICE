@@ -1,0 +1,122 @@
+body
+   font-family: 'Resist Sans Display', sans-serif
+   background: #ffff
+   font-weight: 400
+   font-size: 16px
+   line-height: 26px
+   color: #232323
+a
+   text-decoration: none
+   box-sizing: border-box
+   transition: 0.5s !important
+   &:hover 
+      color: $yel
+.container
+   padding: 0 15px
+   max-width: 1475px
+   margin: 0 auto
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.d-flex, .q
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   color: #FFF
+   font-size: 50px
+   font-style: normal
+   font-weight: bold
+   line-height: 56px
+   margin: 0
+h2 
+   margin: 0
+   font-size: 36px
+   font-weight: 400
+   line-height: 46px
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: 0.5s ease
+a
+   transition: color 0.5s ease
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s ease
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: border 0.5s
+      outline: none
+      border: 1px solid $yel !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $yel !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s, stroke 0.5s
+div 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s, stroke 0.5s
+html * 
+   scrollbar-width: thin
+   scrollbar-color: blue $yel
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar 
+   height: 4px
+   width: 4px
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track 
+   background: #E7E7E7
+   border-radius: 3px
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb 
+   background-color: $yel
+   border-radius: 6px
+.btn 
+   display: flex
+   align-items: center
+   justify-content: center
+   width: 164px
+   height: 50.593px
+   border-radius: 1000px
+   background: $yel
+   color: #000
+   border: 2px solid $yel
+   padding-bottom: 3px
+   &:hover 
+      background: transparent 
+      color: #000
+   &_2
+      width: 110.167px
+      height: 50.593px
+      border: 2px solid #E9E9E9
+      background: #E9E9E9
+      color: #000

@@ -1,0 +1,803 @@
+@media screen and (max-width: 1300px)
+   .nav__logo
+      margin-right: 45px
+   .info__box
+      padding: 88px 60px 0px
+   .ser__wrap
+      padding: 22px 60px 40px
+   .view__el img 
+      width: 458px
+      height: 400px
+   .view__bottom
+      padding-left: 0
+   .selectCF .titleCF
+      max-width: 85px
+   .about__block
+      padding: 80px 40px
+   .accordeon
+      max-width: 640px
+   .header--lang
+      margin-left: 20px
+   .main_submenu--list
+      left: -13%
+   .main_submenu--list:before
+      left: 65%
+   .help__box
+      max-width: 650px
+@media screen and (max-width: 1199px)
+   .menu-btn 
+      width: 48px
+      height: 24px
+      position: absolute
+      right: 0px
+      top: 17px
+      z-index: 11
+      overflow: hidden
+   .menu-btn span 
+      width: 38px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: black
+      transition: all 0.5s
+      margin-left: 5px
+   .menu-btn span:nth-of-type(2) 
+      top: calc(50% - 8.5px)
+      width: 48px
+      height: 2px
+      margin-left: 0
+   .menu-btn span:nth-of-type(3) 
+      top: calc(50% + 9.4px)
+      width: 24px
+      height: 2px
+      margin-left: 12px
+   .menu 
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      padding: 40px 
+      background: white
+      transform: translateX(-100%)
+      transition: transform 0.5s
+      z-index: 10
+      overflow: hidden
+      .style1_main, .nav__list
+         display: block
+      .nav__right
+         display: flex
+         justify-content: center
+         margin-top: 40px
+      .selectCF
+         margin: -38px auto 0
+      .style1_main
+         width: max-content
+         margin: 0 auto
+         img
+            position: relative
+            left: 19px
+            top: 0px
+      .nav__list
+         margin: 40px auto 0
+         text-align: center
+         li 
+            margin-right: 0
+            margin-bottom: 20px
+      .selectCF
+         li 
+            padding: 15px 20px 18px 46px
+      .selectCF li ul li
+         padding-left: 20px
+         text-align: center
+      .onCF li ul
+         padding-right: 0
+   .menu.active
+      transform: translateX(0)
+   .menu-btn.active 
+      overflow: visible
+      position: fixed
+      right: 30px
+      top: 30px
+   .menu-btn.active span:nth-of-type(1) 
+      display: none
+   .menu-btn.active span:nth-of-type(2) 
+      top: 50%
+      width: 24px
+      transform: translate(-50%, 0%) rotate(45deg)
+      margin-left: 0
+   .menu-btn.active span:nth-of-type(3) 
+      width: 24px
+      top: 50%
+      transform: translate(-50%, 0%) rotate(-44deg)
+      margin-left: 0
+   .menu-btn, .menu
+      display: block
+   .nav__list, .nav__right, .style1_main
+      display: none
+   .nav
+      padding: 20px 0
+      &__box 
+         position: relative
+   .swiper1 
+      .swiper-slide 
+         position: relative
+         &:after 
+            background-color: rgba(0, 0, 0, 0.3)
+            height: 100%
+            position: absolute
+            width: 100%
+            bottom: 0
+            left: 0
+            content: ""
+            display: block
+   .header__content
+      z-index: 2
+   .ser__pic
+      height: 200px
+   .ser__name, .ser__sub
+      line-height: 115%
+   .ser 
+      .ser__item
+         margin-bottom: 25px
+   .ser__fig, .info__fig
+      display: none
+   .item .swiper4
+      width: 100%
+      overflow: hidden
+   .info__box 
+      padding: 59px 60px 0px
+      justify-content: space-between
+   .info__left
+      margin-right: 0
+   .footer 
+      padding: 24px 0
+      .nav__list
+         display: flex
+      .nav__right
+         display: flex
+         margin-top: 20px
+      .nav__box 
+         flex-direction: column
+      .nav__left
+         width: 100%
+         justify-content: space-between
+      .selectCF
+         margin-left: 0
+      .style1
+         img 
+            left: 31px
+            position: relative
+            top: -1px
+      &__bottom 
+         flex-direction: column
+      .footer__left
+         flex-direction: column
+      .footer__text
+         margin-right: 0
+         margin-bottom: 10px
+      &__link 
+         margin-right: 0
+         position: relative
+         top: 0
+         margin-bottom: 5px
+      &__sub 
+         margin: 20px auto
+   .services-item
+      .ser__content
+         flex-direction: column
+         align-items: flex-start
+      .item__flex 
+         justify-content: center
+         margin: 20px auto 0
+   .services-item__basket
+      width: 70px
+      height: 100px
+      padding: 0 7px
+      .svg 
+         width: 20px
+   .services-item__basket p
+      font-size: 12px
+      line-height: 14px
+      margin-top: 5px
+   .blog__item
+      width: 30%
+   .view__area
+      flex-direction: column
+   .view__add
+      margin-left: 0
+      margin-top: 20px
+   .view h1 
+      margin-bottom: 0
+      margin-left: 40px
+      line-height: 124%
+   .view__content
+      margin-left: 40px
+   .view__item
+      width: 100%
+      margin-bottom: 70px
+      &:last-child
+         margin-bottom: 0
+   .view__row
+      flex-wrap: wrap
+   .view__el
+      flex-direction: column 
+      &:nth-child(2n)
+         flex-direction: column-reverse
+         .view__block
+            margin-left: 0
+   .view__el img
+      margin-right: 0
+      width: 100%
+      height: auto
+      max-height: 300px
+      margin-bottom: 25px
+   .view__block
+      max-width: 70%
+   .view__last .view__area
+      margin-left: 70px
+   .about__block
+      height: auto
+   .about__bottom
+      flex-direction: column
+   .accordeon
+      max-width: 100% 
+      margin-top: 60px
+   .profile .accordeon
+      margin-top: 0
+   .help__box
+      flex-direction: column
+   .profile__wrap_2
+      padding: 40px !important
+   .help__content
+      margin-top: 25px
+   .help__text
+      margin-bottom: 25px 
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   .header__content
+      padding: 40px 0 40px 50px
+      max-width: 100%
+   .header__box
+      height: 430px
+   h1 
+      font-size: 40px
+      line-height: 45px
+   .header__content p
+      margin: 20px 0 25px
+   .header__arrows
+      bottom: 39px
+      left: 60px
+   .ser__box
+      margin-top: 40px
+   h2 
+      font-size: 30px
+      line-height: 40px
+   .ser .ser__item
+      margin-bottom: 30px
+      width: 48%
+   .ser__btn
+      margin-top: 25px
+   .ser__wrap
+      margin-top: 70px
+   .ser__img
+      margin-left: 0
+   .ser__title, .info__title
+      font-size: 30px
+      line-height: 38px
+   .info__text
+      line-height: 115%
+   .info__box
+      padding: 50px 40px 0
+   .ser__wrap
+      padding: 22px 40px 40px
+   .ser__img
+      width: 40%
+   .ser__link
+      width: 35px !important
+      height: 35px !important
+      .svg 
+         width: 46%
+   .item__btn
+      width: 35px
+      height: 35px
+      img
+         width: 14px
+   .item .swiper4
+      margin-top: 40px
+   .ser 
+      padding: 60px 0 40px
+   .item
+      padding: 9px 0 40px
+   .blog__item
+      width: 46%
+   .art h1
+      margin-left: 0px
+   .art__top
+      flex-direction: column 
+      align-items: flex-start
+   .art__back
+      margin-bottom: 25px
+   .art__top
+      margin-bottom: 30px
+   .view__area
+      width: 100%
+      justify-content: center
+      margin-left: 0
+   .view__top
+      flex-direction: column
+      align-items: flex-start
+   .view h1
+      margin-left: 0
+      text-align: center
+      width: 100%
+      margin-bottom: 25px
+   .view__flex
+      flex-direction: column
+   .view__content
+      margin-left: 0
+      margin-top: 25px
+   .view__pic
+      margin-bottom: 40px
+   .view__wrap
+      margin-top: 60px
+   .view__block
+      max-width: 100%
+   .view__el
+      margin-bottom: 70px
+   .view__last .view__area
+      margin-left: 0
+   .view__last
+      flex-direction: column
+   .view__one
+      margin-bottom: 20px
+      text-align: center
+   .about__content
+      padding: 100px 80px
+   .about__box
+      height: 463px
+   .about__row
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+   .about__item
+      width: 70%
+      margin-bottom: 155px
+      &:last-child
+         margin-bottom: 0
+   .about__how
+      margin-top: 60px
+   .about__row
+      margin-top: 60px
+   .about__item:after 
+      right: 175px
+      top: inherit
+      bottom: -82px
+      transform: rotate(90deg)
+   .about__block
+      padding: 40px
+      width: 100%
+      margin-bottom: 25px
+   .about__block:nth-child(3)
+      border: 3px solid #F5F5F5
+   .about__block:nth-child(4)
+      border: 3px solid #FFE500
+   .profile__menu
+      max-width: 240px
+      margin-right: 25px
+   .profile__wrap
+      padding: 30px 20px
+   .profile__info
+      font-size: 14px
+   .profile__row p
+      font-size: 14px
+   .cont__top
+      flex-direction: column
+   .cont__info 
+      text-align: left
+      margin-top: 25px
+   .cont__edit
+      margin-left: 0
+   .cont__item:last-child .cont__btn
+      margin-left: 0
+   .popup, .popup2, 
+      top: 66%
+@media screen and (max-width: 767px)
+   .ser__name
+      font-size: 16px
+      margin-bottom: 3px
+   .ser .ser__item
+      margin-bottom: 22px
+   .footer .nav__left
+      flex-direction: column
+   .nav__logo
+      margin-right: 0
+   .footer .nav__list
+      flex-direction: column 
+      text-align: center
+      margin: 25px 0 0
+      li 
+         margin-right: 0
+         margin-bottom: 20px
+   .blog__text
+      font-size: 14px
+   .about__content h1 
+      font-size: 30px
+      line-height: 45px
+      margin-bottom: 20px
+   .about__content p
+      margin-top: 0
+      font-size: 18px
+   .about__content
+      padding: 60px
+   .about__box
+      height: 333px
+      position: relative
+      &:after 
+         background-color: rgba(0, 0, 0, 0.2)
+         height: 100%
+         position: absolute
+         width: 100%
+         bottom: 0
+         left: 0
+         content: ""
+         display: block
+         z-index: 0
+   .about__item
+      width: 340px
+   .about__item:after
+      right: 104px
+   .profile__box
+      flex-direction: column 
+      align-items: center
+   .profile__menu 
+      max-width: 327px 
+      margin-right: 0
+      margin-bottom: 40px
+   .profile
+      h1 
+         text-align: center
+
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   input[type="number"] 
+      -webkit-appearance: none
+      box-shadow: none
+      -webkit-box-shadow: none
+      -webkit-border-radius: 0px
+      -moz-border-radius: 0px
+      border-radius: 0px
+      background: transparent !important
+      -webkit-appearance: none
+   .mob 
+      display: block
+   .mm 
+      flex-direction: column 
+      align-items: center
+      justify-content: center
+      li 
+         margin-bottom: 40px !important
+         width: 100% !important
+         margin-top: 0 !important
+   .menu-btn
+      top: 14px
+   .menu-btn.active
+      right: 8px
+      top: 21px
+   .menu
+      padding-top: 70px
+   .menu .selectCF li ul li
+      padding: 15px
+   h1 
+      font-size: 28px
+      line-height: 34px
+   .header__content p
+      font-size: 14px
+      line-height: 130%
+      br 
+         display: none
+   .header__content
+      padding: 40px 
+   .btn 
+      height: 45px
+      font-size: 15px
+   .header__box
+      height: 400px
+   .ser__box
+      margin-top: 30px
+   h2 
+      font-size: 26px
+      line-height: 33px
+   .ser .ser__item
+      width: 100%
+   .header__arrows
+      left: 40px
+   .ser__btn
+      margin-top: 15px
+   .ser__wrap
+      flex-direction: column-reverse
+      padding: 20px 20px 40px
+      height: auto
+   .ser__img
+      width: 60%
+      margin-bottom: 20px
+   .ser__title, .info__title 
+      font-size: 26px
+      line-height: 33px
+   .ser__order
+      margin-top: 30px
+   .ser__sub
+      font-size: 14px
+   .ser__title
+      margin-bottom: 15px
+   .ser__order 
+      width: 100%
+   .item__arrows
+      position: absolute
+      bottom: 0
+      left: 50%
+      top: inherit
+   .item 
+      padding: 9px 0 80px
+      .container 
+         position: relative
+   .item__arrows 
+      position: absolute
+      bottom: -65px
+      left: 50%
+      top: inherit
+      margin-left: -44px
+   .item .swiper4
+      margin-top: 30px
+   .info__box
+      padding: 30px 20px 0px 
+      flex-direction: column
+   .info__img 
+      margin-top: 30px
+      width: 80%
+      margin-left: auto
+   .info
+      padding: 50px 0
+   .footer .nav__btn
+      height: 50px
+   .footer__text, .footer__sub, .footer__com p
+      font-size: 14px
+   .item .ser__pic
+      height: 200px
+   .ser__content
+      padding: 0 10px
+   .page .nav
+      padding: 20px 0
+   .services
+      padding-bottom: 40px !important
+   .footer .nav__right
+      flex-direction: column
+   .footer .nav__btn
+      margin: 20px auto 0
+   .footer .selectCF
+      left: -5px
+   .bread
+      margin-bottom: 40px
+   .services h1 
+      font-size: 30px
+      line-height: 34px
+      margin-bottom: 25px
+   .services__sub
+      font-size: 14px
+      margin-bottom: 40px
+   .services-item
+      .ser__link, .item__btn
+         width: 45px !important
+         height: 45px !important
+   .blog__item
+      width: 100%
+      &:last-child
+         margin-bottom: 40px
+   .blog__top
+      flex-direction: column 
+      margin-bottom: 30px
+      align-items: flex-start
+   .blog 
+      .style1
+         flex-direction: column 
+         align-items: flex-start
+         text-align: center
+         width: 100%
+         align-items: center
+   .blog__top p
+      margin-right: 0
+      margin-bottom: 10px
+   .blog__bottom
+      width: 100%
+      padding: 0
+   .art__top
+      margin-bottom: 0
+   .bread a
+      line-height: 140%
+      margin-bottom: 5px
+      font-size: 12px
+   .art__pic
+      margin-bottom: 20px
+   .art__text 
+      font-size: 16px
+      line-height: 25px
+      margin-bottom: 15px
+   .art__list
+      margin-bottom: 30px
+      li 
+         font-size: 16px
+         line-height: 25px
+   .art__flex
+      margin: 30px 0  10px
+      flex-direction: column 
+      img 
+         width: 100%
+         margin-bottom: 20px
+   .art blockquote 
+      border-left: 3px solid #232323
+      margin: 30px 0
+      padding: 10px 0 10px 25px
+      font-size: 21px
+      line-height: 32px
+   .art__box
+      margin-bottom: 60px
+   .view__sum
+      font-size: 30px
+   .view__add
+      margin-top: 10px
+      width: 100%
+   .view__pic
+      margin-bottom: 25px
+      height: 270px
+   .view__content p
+      font-size: 14px
+      line-height: 23px
+      margin-bottom: 15px
+   .view__name
+      font-size: 17px
+      margin-top: -36px
+   .view__text, .view__list li
+      font-size: 14px
+      line-height: 23px
+   .view__item
+      padding: 70px 20px 30px
+   .view__icon
+      width: 70px
+      top: -31px
+   .view__title
+      margin-bottom: 20px
+   .view__el .view__text
+      margin-bottom: 15px
+   .view__bottom
+      margin-top: 90px
+   .view__one 
+      font-size: 23px
+      line-height: 29px
+   .view__flex
+      margin-bottom: 100px
+   .art__back
+      .svg 
+         width: 35px
+   .about__content
+      padding: 40px
+   .about__how
+      margin-top: 40px
+   .about__icon
+      width: 80px
+   .about__item p, .about__sub, .panel__text p
+      font-size: 14px
+      line-height: 150%
+   .about__wrap
+      margin-top: 60px
+   .about__block
+      padding: 30px
+   .about__how h2
+      font-size: 22px
+      line-height: 30px
+   .about__bottom
+      margin-top: 40px
+   .accordeon__button
+      font-size: 18px
+   .accordeon__item
+      padding-bottom: 10px
+      margin-bottom: 30px
+   .about
+      padding-bottom: 80px
+      .ser__wrap
+         margin-top: 50px
+   .profile__info
+      font-size: 12px
+      margin-top: 10px
+   .profile__text
+      width: 100%
+      line-height: 115%
+      max-width: 200px
+   .profile__menu
+      margin-top: 30px
+   .cont__name 
+      margin-bottom: 0
+      line-height: 130%
+   .cont__btn
+      width: 100% !important
+   .cont__info
+      width: 100%
+   .help__content
+      max-width: 100%
+   .popup, .popup2, .popup3
+      top: 69%
+      width: 90%
+      padding: 60px 20px
+   .popup3
+      width: 90%
+      padding: 60px 20px
+      top: 60% !important
+      .popup__title
+         margin-bottom: 40px
+   .popup__title 
+      font-size: 27px
+      margin-bottom: 15px
+   .popup .profile__row
+      padding-right: 30px
+   .popup__name
+      font-size: 16px
+   .popup__flex
+      flex-wrap: wrap
+   .popup .calc__item, .popup3 .calc__item
+      &:last-child
+         width: 100%
+   .popup .calc__item, .popup3 .calc__item
+      width: 47.5%
+      margin-bottom: 15px
+   .popup__row
+      flex-direction: column
+      margin: 10px 0 30px
+   .popup .profile__area
+      margin-bottom: 25px
+   .popup__fig
+      margin: 10px 0
+   .popup__row .selectCF .arrowCF 
+      right: 20%
+      top: 20px
+   .popup textarea
+      margin-top: 0
+   .popup__btn
+      margin-top: 20px
+      width: 100%
+   .popup__head
+      margin-top: 15px
+   .popup__check
+      width: 50%
+   .popup__per
+      margin-top: 25px
+   .popup3 .style2 .selectCF > li
+      padding-top: 16px
+   .popup .custom-checkbox + label, .popup3 .custom-checkbox + label
+      box-sizing: border-box
+   .style3 
+      z-index: 7 !important
+   .popup__row .style1, .popup3__row .style1
+      width: 100%
+   .popup__row .onCF li ul, .popup3__row .onCF li ul
+      top: 52px
+   .popup__row .selectCF .titleCF, .popup3__row .selectCF .titleCF
+      margin-right: 0
+   .profile__sum
+      white-space: nowrap
+
+   
