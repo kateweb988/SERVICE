@@ -41,7 +41,7 @@ input:-moz-placeholder
             display: none
       &:hover 
          color: $yel
-.popup__bg, .popup__bg2, .popup__bg3
+.popup__bg, .popup__bg2, .popup__bg3, .popup__bg4, .popup__bg5, .popup__bg6, .popup__bg7, .popup__bg8, .popup__bg9, .popup__bg10, .popup__bg11, .popup__bg12, .popup__bg13
    position: fixed
    top: 0
    left: 0
@@ -53,12 +53,12 @@ input:-moz-placeholder
    transition: 0.5s all
    overflow-y: auto
    overflow-x: hidden
-.popup__bg.active, .popup__bg2.active, .popup__bg3.active
+.popup__bg.active, .popup__bg2.active, .popup__bg3.active, .popup__bg4.active, .popup__bg5.active, .popup__bg6.active, .popup__bg7.active, .popup__bg8.active, .popup__bg9.active, .popup__bg10.active, .popup__bg11.active, .popup__bg12.active, .popup__bg13.active
     opacity: 1
     pointer-events: all
     transition: 0.5s all
     z-index: 22
-.popup, .popup2, .popup3
+.popup, .popup2, .popup3, .popup4, .popup5, .popup6, .popup7, .popup8, .popup9, .popup10, .popup11, .popup12, .popup13
    position: absolute
    top: 60%
    left: 50%
@@ -69,7 +69,7 @@ input:-moz-placeholder
    border-radius: 20px
    background: #FFF
    padding: 60px 40px
-.popup.active, .popup2.active, .popup3.active
+.popup.active, .popup2.active, .popup3.active, .popup4.active,  .popup5.active, .popup6.active, .popup7.active, .popup8.active, .popup9.active, .popup10.active, .popup11.active, .popup12.active, .popup13.active
    transform: translate(-50%, -46%) scale(1)
    transition: 0.5s all
 .popup, .popup3 
@@ -137,6 +137,8 @@ input:-moz-placeholder
          display: flex
          align-items: center
          justify-content: center
+         -webkit-font-smoothing: antialiased
+         -webkit-backface-visibility: hidden
          padding: 0
          li 
             padding: 0
@@ -169,7 +171,10 @@ input:-moz-placeholder
       margin-bottom: 0
       padding-bottom: 2px
       color: #232323
+      box-sizing: border-box
       font-size: 16px
+      -webkit-font-smoothing: antialiased
+      -webkit-backface-visibility: hidden
       &:before 
          display: none
    .custom-checkbox:checked+label
@@ -274,13 +279,129 @@ input:-moz-placeholder
    &__address
       color: #BABABA
       margin-bottom: 25px
-.close-popup, .close-popup2, .close-popup3
+.popup6, .popup7, .popup8, .popup9
+   &__title 
+      font-size: 20px
+      text-align: center
+   .popup__btn
+      margin-bottom: 0 !important
+.popup4, .popup5, .popup6, .popup7, .popup8, .popup9, .popup10, .popup11, .popup12, .popup13
+   width: 470px
+   padding: 50px 60px
+   top: 47% !important
+   &__info 
+      color: #232323
+      text-align: center
+      font-size: 14px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      margin-bottom: 20px
+      a 
+         color: #232323
+         border-bottom: 1px solid #232323
+         &:hover 
+            color: $yel
+            border-bottom: 1px solid $yel
+   &__reg 
+      margin-top: 10px !important
+   form 
+      margin-top: 38px
+   &__pass 
+      color: #232323
+      font-size: 16px
+      &:hover 
+         color: $yel
+   &__area 
+      position: relative
+   &__btn 
+      width: 100%
+      height: 56px
+   &__link 
+      color: #232323
+      text-align: center
+      font-size: 14px
+      font-style: normal
+      font-weight: 400
+      line-height: normal
+      margin: 0 auto 20px
+      display: block
+      &:hover 
+         color: $yel
+   .popup__btn
+      width: 100%
+      margin-bottom: 30px
+      margin-top: 0
+   &__flex 
+      align-items: center
+      margin-bottom: 30px
+      justify-content: space-between
+      .custom-checkbox + label
+         margin-bottom: 0
+         color: #232323
+         font-size: 16px
+         font-style: normal
+         font-weight: 400
+      .custom-checkbox + label::before
+         margin-right: 10px
+         border-radius: 5px
+         background-color: white
+         border: 1px solid #252525
+         background: url(/img/ch.svg) no-repeat center center
+      .custom-checkbox:checked + label::before
+         margin-right: 10px
+         border-radius: 5px
+         background: url(/img/ch.svg) no-repeat center center
+         background-color: #252525
+         border: 1px solid #252525
+   textarea 
+      width: 100%
+      min-height: 269px
+      border-radius: 10px
+      padding-top: 18px
+      border: 1px solid #F4F4F4
+      background: #F4F4F4
+      padding-left: 22px
+      font-size: 16px
+      margin-bottom: 16px
+   input 
+      width: 100%
+      height: 54.56px
+      border-radius: 10px
+      background: #F4F4F4
+      padding-left: 22px
+      font-size: 16px
+      margin-bottom: 16px
+   input::-webkit-input-placeholder 
+      color: #B5B5B5 !important
+   input::-moz-placeholder
+      color: #B5B5B5 !important
+   input:-ms-input-placeholder 
+      color: #B5B5B5 !important
+   input:-moz-placeholder 
+      color: #B5B5B5 !important
+   textarea::-webkit-input-placeholder 
+      color: #B5B5B5 !important
+   textarea::-moz-placeholder
+      color: #B5B5B5 !important
+   textarea:-ms-input-placeholder 
+      color: #B5B5B5 !important
+   textarea:-moz-placeholder 
+      color: #B5B5B5 !important
+.popup13
+   width: 650px
+   .popup6__title
+      font-size: 30px   
+   button 
+      width: 349px !important
+      margin-bottom: 0 !important
+.close-popup, .close-popup2, .close-popup3, .close-popup4, .close-popup5,  .close-popup6, .close-popup7, .close-popup8, .close-popup9, .close-popup10, .close-popup11, .close-popup12, .close-popup13
    position: absolute
    top: 20px
    right: 20px
    cursor: pointer
-   width: 15px
-   height: 15px
+   width: 12px
+   height: 12px
    fill: white
    z-index: 20
    transition: 0.5s
@@ -289,6 +410,19 @@ input:-moz-placeholder
       transform: rotate(0deg)
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after
    display: none
+.password-control, .password-control2, .password-control3 
+   position: absolute
+   right: 18px
+   width: 25px
+   height: 19px
+   bottom: 32px
+   background: url(/img/view.svg) center center no-repeat
+.password-control.view, .password-control2.view, .password-control3.view
+   background: url(/img/no-view.svg) center center no-repeat
+   right: 18px
+   width: 25px
+   height: 19px
+   bottom: 32px
 .custom-checkbox 
    position: absolute
    z-index: -1
@@ -302,6 +436,8 @@ input:-moz-placeholder
    color: #3D3D3D
    cursor: pointer
    margin-bottom: 10px
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
    &:hover
       &:before 
          border: 1px solid $yel
@@ -332,6 +468,8 @@ input:-moz-placeholder
    font-weight: 300
    font-size: 14px
    line-height: 100%
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
    color: #FFFFFF
 .swiper-pagination2, .swiper-pagination3, .swiper-pagination4
    display: flex
@@ -383,6 +521,11 @@ input[type=number]::-webkit-outer-spin-button
          object-fit: contain
    &__link 
       margin-left: 17px
+      p 
+         transition: 0.5s
+      img 
+         display: none
+
 #fromSlider 
    height: 0
    z-index: 1
@@ -415,6 +558,8 @@ input[type=number]::-webkit-outer-spin-button
    border: 1px solid #D4D4D4
    min-width: 145px
    margin-left: -33px
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
 .selectCF li
    list-style: none
    cursor: pointer
@@ -426,10 +571,14 @@ input[type=number]::-webkit-outer-spin-button
    height: 100%
    max-height: 100%
    box-sizing: border-box
-   padding: 15px 20px 18px 40px
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
+   padding: 15px 20px 15px 40px
 .selectCF > li
    position: relative
    border: none
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
 .selectCF span
    display: flex
    height: auto
@@ -437,6 +586,8 @@ input[type=number]::-webkit-outer-spin-button
    color: #888888
    z-index: 1
    align-items: center
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
 .selectCF .arrowCF
    transition: .3s
    -webkit-transition: .3s
@@ -455,7 +606,7 @@ input[type=number]::-webkit-outer-spin-button
    color: #000000 !important
    white-space: nowrap
    overflow: hidden
-   max-width: 125px
+   max-width: 80px
    display: block
    margin-right: 10px
    width: max-content !important
@@ -465,6 +616,8 @@ input[type=number]::-webkit-outer-spin-button
    top: -2px
    box-sizing: border-box
    background: transparent !important
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
 .selectCF .searchCF
    position: absolute
    top: 3px
@@ -530,6 +683,8 @@ input[type=number]::-webkit-outer-spin-button
    height: 40px
    font-weight: 400
    font-size: 16px
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
    line-height: 22px
    &:last-child
       border-radius: 0px 0px 5px 5px
@@ -626,7 +781,7 @@ input[type=number]::-webkit-outer-spin-button
       padding: 98px 0 60px 82px
       position: relative
       width: 100%
-      max-width: 480px
+      max-width: 550px
       p 
          color: white
          margin: 20px 0 44px
@@ -697,23 +852,34 @@ picture
       object-fit: cover
 .ser 
    padding: 69px 0
+   &-main 
+      .ser__item 
+         &:hover 
+            border: 1px solid transparent
+            box-shadow: 0px 9px 45px 0px rgba(0, 0, 0, 0.10)
+            .ser__link
+               background: $yel
+               .svg 
+                  path 
+                     fill: black
    &__box 
       justify-content: space-between
       flex-wrap: wrap 
       margin-top: 59px
    &__item 
-      width: 23%
+      width: 23.2%
       border-radius: 10px
       border: 1px solid #E3E3E3
-      padding: 13px 13px 20px
+      padding: 14px 13px 22px
       margin-bottom: 37px
+      transition: 0.5s
    &__pic 
       width: 100%
       border-radius: 10px
       overflow: hidden
-      height: 225.46px
+      height: 216.5px
       object-fit: cover
-      margin-bottom: 9px
+      margin-bottom: 15px
    &__name 
       font-size: 18px
       margin-bottom: 6px
@@ -737,6 +903,9 @@ picture
       position: relative
       top: 2px
       padding-left: 1px
+      .svg 
+         path 
+            fill: #909090
       &:hover 
          background: $yel
          .svg 
@@ -869,8 +1038,25 @@ picture
                fill: $yel
    .swiper4 
       margin-top: 61px
-      width: 1445px
-      // overflow: hidden
+      width: 100%
+      position: relative
+      .swiper-slide
+         opacity: 0 
+         transition: 0.5s 
+      .swiper-slide-active
+         opacity: 1
+      .swiper-slide-active + .swiper-slide + .swiper-slide  + .swiper-slide  + .swiper-slide 
+         opacity: 1
+      .swiper-slide-active + .swiper-slide + .swiper-slide  + .swiper-slide 
+         opacity: 1
+      .swiper-slide-active + .swiper-slide + .swiper-slide
+         opacity: 1 
+      .swiper-slide-active + .swiper-slide 
+         opacity: 1
+      .ser__item
+         &:hover 
+            border: 1px solid transparent
+            box-shadow: 0px 9px 45px 0px rgba(0, 0, 0, 0.10)
    .ser__item
       margin-bottom: 0
       padding: 10px 10px 15px
@@ -884,6 +1070,8 @@ picture
       align-items: center
       justify-content: center
       background: #F2F2F2
+      cursor: pointer
+      transition: 0.5s
       border-radius: 50%
       width: 43.3px
       height: 43.3px
@@ -907,6 +1095,11 @@ picture
       position: relative
    .swiper-button-next4
       left: 10px
+.services-item.services
+   .ser__item
+      &:hover 
+         border: 1px solid transparent
+         box-shadow: 0px 9px 45px 0px rgba(0, 0, 0, 0.10)
 .page 
    .nav
       padding: 45px 0 50px
@@ -917,8 +1110,17 @@ picture
    &-about
       .nav 
          box-shadow: inherit
+.swiper-button-disabled 
+   opacity: 0.2 !important
+   pointer-events: none
+.swiper-button 
+   transition: 0.5s
 .services 
-   padding: 30px 0 80px !important
+   padding: 30px 0 40px !important
+   &-item 
+      .ser__link
+         width: 43.3px
+         height: 43.3px
    h1
       font-size: 36px
       font-weight: 400
@@ -931,9 +1133,6 @@ picture
       margin-bottom: 48px
    .ser__box
       margin-top: 0
-   .ser__link
-      width: 43.3px
-      height: 43.3px
    &-item 
       position: relative
       &__basket 
@@ -976,41 +1175,51 @@ picture
       .selectCF
          margin-left: 0
          min-width: 186px
+         border: 1px solid #323232
+      .onCF li ul
+         border: 1px solid #323232
       .selectCF .arrowCF
          background: url(/img/arr2.svg) no-repeat !important
          right: 20px
-         top: 21px
+         top: 23px
          width: 10px
          height: 8px
       .selectCF .titleCF
          top: 0
          color: #252525 !important
          font-size: 15px
+         max-width: 118px
          font-family: 'Montserrat', sans-serif
       .selectCF li
-         padding: 15px 20px 18px
+         padding: 16px 20px 15px
    &__left2 
       margin: 0 13px
       position: relative
-      top: 3px
+      top: 0px
+      left: -16px
    &__right2 
       margin: 0 13px
       position: relative
-      top: 3px
+      top: 0px
+      left: -21px
    &__left
       position: relative
-      top: 3px
+      top: 0px
+      left: -25px
    &__right
       position: relative
-      top: 3px
+      top: 0px
+      right: 14px
    &__bottom
       align-items: center
       justify-content: space-between
-      width: 371.982px
+      width: 328px
       height: 50px
       padding: 9px 30px
       margin: 30px auto 
    &__nav
+      position: relative
+      left: -16px
       align-items: center
       li 
          width: 32px
@@ -1021,6 +1230,7 @@ picture
          align-items: center
          justify-content: center
          color: #252525
+         margin-right: 5px
          a  
             color: #252525
             font-family: 'Montserrat', sans-serif
@@ -1033,7 +1243,7 @@ picture
             justify-content: center
          &.active 
             background: $yel 
-            margin-right: 10px
+            margin-right: 5px
             a 
                color: #252525 !important
          &:hover 
@@ -1058,7 +1268,7 @@ picture
    &__block 
       align-items: center
       justify-content: center
-      margin-bottom: 12px
+      margin-bottom: 14px
       width: 107.598px
       height: 25.943px
       border-radius: 100px
@@ -1147,6 +1357,7 @@ picture
       line-height: 34px
       font-style: italic
 .view 
+
    &__top 
       align-items: center
       margin-bottom: 40px
@@ -1165,12 +1376,31 @@ picture
       height: 50px
       margin-left: 30px
       background: #F2F2F2
+      position: relative
       border: 2px solid #F2F2F2
+      padding-right: 30px
+      transition: 0.5s 
+      cursor: pointer
       img
-         margin: 5px 0 0 11px
+         position: absolute
+         right: 20px
+         top: 50%
+         margin-top: -8.5px
       &:hover 
          background: $yel
          border: 2px solid $yel
+      &.active
+         background: $yel
+         .view_1 
+            display: none !important
+         .view_2 
+           display: flex  !important
+           padding-right: 43%
+   &_1
+      transition: 0.5s 
+   &_2 
+      transition: 0.5s  
+      display: none !important
    .services__sub
       max-width: 100%
    &__pic 
@@ -1201,7 +1431,7 @@ picture
       width: 30.69%
       border-radius: 20px
       background: #F2F2F2
-      padding: 70px 33px 34px
+      padding: 70px 30px 34px
    &__icon 
       margin: -120px auto 20px
       position: relative
@@ -1292,6 +1522,8 @@ picture
    font-size: 24px
    font-weight: 400
    line-height: 120%
+   -webkit-font-smoothing: antialiased
+   -webkit-backface-visibility: hidden
    padding-right: 40px
 .accordeon__button:after  
    content: '' 
@@ -1410,10 +1642,12 @@ picture
       background: #F5F5F5
       overflow: hidden
       margin-bottom: 50px
-      padding: 80px 114px
+      padding: 74px 114px
       border: 3px solid #F5F5F5
       &:nth-child(2), &:nth-child(3)
          border: 3px solid $yel
+      &:nth-child(2n)
+         padding: 74px 78px
    &__name 
       text-align: left !important
       margin-bottom: 13px
@@ -1431,7 +1665,7 @@ picture
    position: relative
    display: flex
    align-items: center
-   margin-left: 40px
+   margin-left: 20px
    @media( max-width: 992px )
       justify-content: center
    .plug__sum 
@@ -1492,7 +1726,7 @@ picture
    @media( max-width: 992px )
       margin-right: -15px
    &--list
-      display: flex
+      display: none
       flex-direction: column
       position: absolute
       left: 45%
@@ -1528,6 +1762,8 @@ picture
       transition: transform .1s
       @media( min-width: 1001px )
          transform: rotateX(90deg)
+      &:last-child
+         margin-left: 5px
    &--lnk
       display: flex 
       align-items: center
@@ -1544,9 +1780,6 @@ picture
          letter-spacing: 0.16px
          transition: 0.5s 
       &:hover 
-         .svg 
-            path 
-               stroke: $yel
          p 
             color: $yel
    &:hover
@@ -1681,6 +1914,12 @@ picture
    &__arr 
       position: relative
       top: 2px
+   &__ava
+      img
+         width: 50.59px
+         border-radius: 50% 
+         object-fit: contain
+         height: 50.593px
 .profile 
    h1 
       margin-bottom: 47px
@@ -1845,7 +2084,7 @@ picture
    &__edit
       font-size: 13px
       margin-bottom: 13px
-      color: $yel
+      color: #FFC700
       display: block
       width: max-content
       margin-left: auto
@@ -1856,7 +2095,8 @@ picture
    &__btn 
       height: 51px
       width: 261px
-      color: #9A9A9A 
+      color: #EDEDED
+      color: #9A9A9A
       margin-left: auto
    &__item 
       padding-bottom: 24px
@@ -1879,7 +2119,7 @@ picture
       margin: 0 auto
    &__content 
       width: 100%
-      max-width: 280px
+      max-width: 300px
       text-align: center
       a 
          width: 100%
@@ -1897,3 +2137,33 @@ picture
       font-size: 14px
       line-height: 23px
       margin-bottom: 44px
+.cont__top_tel
+   align-items: center
+.footer, .header
+   .selectCF .titleCF
+      height: 22px !important
+      position: absolute
+      top: 50%
+      margin-top: -10px
+.popup__per
+   height: 58px
+#map, #map2
+   width: 100%
+   height: 161px
+   margin-bottom: 30px
+   overflow: hidden
+   border-radius: 10px
+.popup__form label 
+   display: block
+   text-align: center
+   color: #909090
+   font-size: 16px
+   font-style: normal
+   font-weight: 400
+   line-height: 28px 
+   margin: 0 auto 8px
+.tac 
+   text-align: center
+   line-height: 100%  !important
+   font-size: 22px !important
+   padding-left: 0 !important

@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //popup3
   let popupBg3 = document.querySelector('.popup__bg3');
   let popup3 = document.querySelector('.popup3');
-  let openPopupButtons3 = document.querySelectorAll('.a3');
+  let openPopupButtons3 = document.querySelectorAll('.nav__btn, .a3');
   let closePopupButton3 = document.querySelector('.close-popup3');
 
   openPopupButtons3.forEach((button) => {
@@ -303,6 +303,457 @@ document.addEventListener("DOMContentLoaded", () => {
       popupBg3.classList.remove('active');
       popup3.classList.remove('active');
     }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup4
+  let popupBg4 = document.querySelector('.popup__bg4');
+  let popup4 = document.querySelector('.popup4');
+  let openPopupButtons4 = document.querySelectorAll('.nav__link');
+  let closePopupButton4 = document.querySelector('.close-popup4');
+
+  openPopupButtons4.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg4.classList.add('active');
+      popup4.classList.add('active');
+    })
+  });
+
+  closePopupButton4.addEventListener('click', () => {
+    popupBg4.classList.remove('active');
+    popup4.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg4) {
+      popupBg4.classList.remove('active');
+      popup4.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg4.classList.remove('active');
+      popup4.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup5
+  let popupBg5 = document.querySelector('.popup__bg5');
+  let popup5 = document.querySelector('.popup5');
+  let openPopupButtons5 = document.querySelectorAll('.popup4__btn');
+  let closePopupButton5 = document.querySelector('.close-popup5');
+
+  openPopupButtons5.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg5.classList.add('active');
+      popup5.classList.add('active');
+    })
+  });
+
+  closePopupButton5.addEventListener('click', () => {
+    popupBg5.classList.remove('active');
+    popup5.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg5) {
+      popupBg5.classList.remove('active');
+      popup5.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg5.classList.remove('active');
+      popup5.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup6
+  let popupBg6 = document.querySelector('.popup__bg6');
+  let popup6 = document.querySelector('.popup6');
+  let openPopupButtons6 = document.querySelectorAll('.cont__btn_1');
+  let closePopupButton6 = document.querySelector('.close-popup6');
+
+  openPopupButtons6.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg6.classList.add('active');
+      popup6.classList.add('active');
+    })
+  });
+
+  closePopupButton6.addEventListener('click', () => {
+    popupBg6.classList.remove('active');
+    popup6.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg6) {
+      popupBg6.classList.remove('active');
+      popup6.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg6.classList.remove('active');
+      popup6.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup7
+  let popupBg7 = document.querySelector('.popup__bg7');
+  let popup7 = document.querySelector('.popup7');
+  let openPopupButtons7 = document.querySelectorAll('.cont__btn_2');
+  let closePopupButton7 = document.querySelector('.close-popup7');
+
+  openPopupButtons7.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg7.classList.add('active');
+      popup7.classList.add('active');
+    })
+  });
+
+  closePopupButton7.addEventListener('click', () => {
+    popupBg7.classList.remove('active');
+    popup7.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg7) {
+      popupBg7.classList.remove('active');
+      popup7.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg7.classList.remove('active');
+      popup7.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup8
+  let popupBg8 = document.querySelector('.popup__bg8');
+  let popup8 = document.querySelector('.popup8');
+  let openPopupButtons8 = document.querySelectorAll('.cont__btn_3');
+  let closePopupButton8 = document.querySelector('.close-popup8');
+
+  openPopupButtons8.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg8.classList.add('active');
+      popup8.classList.add('active');
+    })
+  });
+
+  closePopupButton8.addEventListener('click', () => {
+    popupBg8.classList.remove('active');
+    popup8.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg8) {
+      popupBg8.classList.remove('active');
+      popup8.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg8.classList.remove('active');
+      popup8.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup9
+  let popupBg9 = document.querySelector('.popup__bg9');
+  let popup9 = document.querySelector('.popup9');
+  let openPopupButtons9 = document.querySelectorAll('.cont__edit_1');
+  let closePopupButton9 = document.querySelector('.close-popup9');
+
+  openPopupButtons9.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg9.classList.add('active');
+      popup9.classList.add('active');
+    })
+  });
+
+  closePopupButton9.addEventListener('click', () => {
+    popupBg9.classList.remove('active');
+    popup9.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg9) {
+      popupBg9.classList.remove('active');
+      popup9.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg9.classList.remove('active');
+      popup9.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup10
+  let popupBg10 = document.querySelector('.popup__bg10');
+  let popup10 = document.querySelector('.popup10');
+  let openPopupButtons10 = document.querySelectorAll('.cont__edit_2');
+  let closePopupButton10 = document.querySelector('.close-popup10');
+
+  openPopupButtons10.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg10.classList.add('active');
+      popup10.classList.add('active');
+    })
+  });
+
+  closePopupButton10.addEventListener('click', () => {
+    popupBg10.classList.remove('active');
+    popup10.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg10) {
+      popupBg10.classList.remove('active');
+      popup10.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg10.classList.remove('active');
+      popup10.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup11
+  let popupBg11 = document.querySelector('.popup__bg11');
+  let popup11 = document.querySelector('.popup11');
+  let openPopupButtons11 = document.querySelectorAll('.cont__edit_3');
+  let closePopupButton11 = document.querySelector('.close-popup11');
+
+  openPopupButtons11.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg11.classList.add('active');
+      popup11.classList.add('active');
+    })
+  });
+
+  closePopupButton11.addEventListener('click', () => {
+    popupBg11.classList.remove('active');
+    popup11.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg11) {
+      popupBg11.classList.remove('active');
+      popup11.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg11.classList.remove('active');
+      popup11.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup12
+  let popupBg12 = document.querySelector('.popup__bg12');
+  let popup12 = document.querySelector('.popup12');
+  let openPopupButtons12 = document.querySelectorAll('.a4');
+  let closePopupButton12 = document.querySelector('.close-popup12');
+
+  openPopupButtons12.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg12.classList.add('active');
+      popup12.classList.add('active');
+    })
+  });
+
+  closePopupButton12.addEventListener('click', () => {
+    popupBg12.classList.remove('active');
+    popup12.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg12) {
+      popupBg12.classList.remove('active');
+      popup12.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg12.classList.remove('active');
+      popup12.classList.remove('active');
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  //popup13
+  let popupBg13 = document.querySelector('.popup__bg13');
+  let popup13 = document.querySelector('.popup13');
+  let openPopupButtons13 = document.querySelectorAll('.help__btn');
+  let closePopupButton13 = document.querySelector('.close-popup13');
+
+  openPopupButtons13.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupBg13.classList.add('active');
+      popup13.classList.add('active');
+    })
+  });
+
+  closePopupButton13.addEventListener('click', () => {
+    popupBg13.classList.remove('active');
+    popup13.classList.remove('active');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg13) {
+      popupBg13.classList.remove('active');
+      popup13.classList.remove('active');
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      //ваша функция закрытия окна
+      popupBg13.classList.remove('active');
+      popup13.classList.remove('active');
+    }
+  });
+});
+window.addEventListener("DOMContentLoaded", function () {
+  $('body').on('click', '.password-control', function () {
+    if ($('#password-input').attr('type') == 'password') {
+      $(this).addClass('view');
+      $('#password-input').attr('type', 'text');
+    } else {
+      $(this).removeClass('view');
+      $('#password-input').attr('type', 'password');
+    }
+    return false;
+  });
+});
+window.addEventListener("DOMContentLoaded", function () {
+  $('body').on('click', '.password-control2', function () {
+    if ($('#password-input2').attr('type') == 'password') {
+      $(this).addClass('view');
+      $('#password-input2').attr('type', 'text');
+    } else {
+      $(this).removeClass('view');
+      $('#password-input2').attr('type', 'password');
+    }
+    return false;
+  });
+});
+window.addEventListener("DOMContentLoaded", function () {
+  $('body').on('click', '.password-control3', function () {
+    if ($('#password-input3').attr('type') == 'password') {
+      $(this).addClass('view');
+      $('#password-input3').attr('type', 'text');
+    } else {
+      $(this).removeClass('view');
+      $('#password-input3').attr('type', 'password');
+    }
+    return false;
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn1').on('click', function () {
+    $('.item__btn1').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn2').on('click', function () {
+    $('.item__btn2').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn3').on('click', function () {
+    $('.item__btn3').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn4').on('click', function () {
+    $('.item__btn4').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn5').on('click', function () {
+    $('.item__btn5').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn6').on('click', function () {
+    $('.item__btn6').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn7').on('click', function () {
+    $('.item__btn7').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn8').on('click', function () {
+    $('.item__btn8').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn9').on('click', function () {
+    $('.item__btn9').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn10').on('click', function () {
+    $('.item__btn10').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn11').on('click', function () {
+    $('.item__btn11').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn12').on('click', function () {
+    $('.item__btn12').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn13').on('click', function () {
+    $('.item__btn13').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.item__btn14').on('click', function () {
+    $('.item__btn14').toggleClass('active');
+  });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  $('.view__add').on('click', function () {
+    $('.view__add').toggleClass('active');
   });
 });
 document.addEventListener('DOMContentLoaded', function () {
@@ -430,7 +881,7 @@ document.addEventListener('DOMContentLoaded', function () {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        spaceBetween: 0,
+        spaceBetween: 24,
         loop: true,
         slidesPerView: 1,
         pagination: {

@@ -13,7 +13,7 @@
    .selectCF .titleCF
       max-width: 85px
    .about__block
-      padding: 80px 40px
+      padding: 80px 40px !important
    .accordeon
       max-width: 640px
    .header--lang
@@ -25,13 +25,18 @@
    .help__box
       max-width: 650px
 @media screen and (max-width: 1199px)
+   header
+      position: relative
    .menu-btn 
       width: 48px
       height: 24px
       position: absolute
-      right: 0px
-      top: 17px
+      top: 4% !important
+      right: inherit
+      left: inherit
+      right: 14%
       z-index: 11
+      background: url(/img/burger.svg) no-repeat center center
       overflow: hidden
    .menu-btn span 
       width: 38px
@@ -43,6 +48,7 @@
       background-color: black
       transition: all 0.5s
       margin-left: 5px
+      opacity: 0
    .menu-btn span:nth-of-type(2) 
       top: calc(50% - 8.5px)
       width: 48px
@@ -59,17 +65,29 @@
       left: 0
       width: 100%
       height: 100%
-      padding: 40px 
+      padding: 40px 20px
       background: white
       transform: translateX(-100%)
       transition: transform 0.5s
       z-index: 10
       overflow: hidden
+      .footer__left
+         margin-top: 60px
+         p 
+            margin-bottom: 10px
+         .footer__link
+            margin-right: 7px
+      .nav__btn 
+         display: flex
+         width: 207px
+         height: 50px
+      .nav__list li a
+         font-size: 20px
       .style1_main, .nav__list
          display: block
       .nav__right
          display: flex
-         justify-content: center
+         justify-content: flex-start
          margin-top: 40px
       .selectCF
          margin: -38px auto 0
@@ -82,7 +100,7 @@
             top: 0px
       .nav__list
          margin: 40px auto 0
-         text-align: center
+         text-align: left
          li 
             margin-right: 0
             margin-bottom: 20px
@@ -101,6 +119,9 @@
       position: fixed
       right: 30px
       top: 30px
+      background: transparent
+      span 
+         opacity: 1
    .menu-btn.active span:nth-of-type(1) 
       display: none
    .menu-btn.active span:nth-of-type(2) 
@@ -115,8 +136,19 @@
       margin-left: 0
    .menu-btn, .menu
       display: block
-   .nav__list, .nav__right, .style1_main
+   .nav__list, .nav__btn
       display: none
+   .nav__link
+      width: 35px
+      border-radius: 50%
+      flex: 1 0 auto 
+      max-width: 35px
+      margin-left: 0
+      height: 35px !important
+      p 
+         display: none
+      img 
+         display: block
    .nav
       padding: 20px 0
       &__box 
@@ -255,6 +287,56 @@
       margin-top: 25px
    .help__text
       margin-bottom: 25px 
+   .nav__logo
+      max-width: 110px
+   .header
+      .selectCF .titleCF 
+         max-width: 62px
+      .onCF li ul
+         top: 43px
+      .selectCF li ul li
+         height: 30px
+         font-size: 13px
+      .selectCF
+         width: 100%
+         height: 35px
+         background: transparent
+         border: none
+         margin-left: -42px
+         .arrowCF
+            right: 11px
+            top: 15px
+         .titleCF
+            font-size: 13px
+            margin-top: -9px
+         & >
+            li 
+               width: 108px
+               box-sizing: border-box
+               border-radius: 1000px
+               border: 1px solid #D4D4D4
+               padding: 18px 20px 15px 27px
+      .style1_main
+         margin-left: 40px
+         img 
+            width: 11px
+   .menu-btn
+      width: 23px
+      top: 4% !important
+      right: inherit
+      left: inherit
+      z-index: 100
+      right: 15%
+   .nav__box
+      padding-left: 34px
+   .container
+      padding: 0 20px
+   .nav__logo
+      width: 110px
+   .nav
+      position: relative
+      z-index: 12
+      padding: 16px 0
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -380,7 +462,7 @@
       bottom: -82px
       transform: rotate(90deg)
    .about__block
-      padding: 40px
+      padding: 40px !important
       width: 100%
       margin-bottom: 25px
    .about__block:nth-child(3)
@@ -405,8 +487,10 @@
       margin-left: 0
    .cont__item:last-child .cont__btn
       margin-left: 0
-   .popup, .popup2, 
+   .popup, .popup2
       top: 66%
+   .cont__top_tel 
+      align-items: flex-start
 @media screen and (max-width: 767px)
    .ser__name
       font-size: 16px
@@ -496,7 +580,8 @@
          width: 100% !important
          margin-top: 0 !important
    .menu-btn
-      top: 14px
+      top: 23px !important
+      left: 19px
    .menu-btn.active
       right: 8px
       top: 21px
@@ -518,70 +603,112 @@
       height: 45px
       font-size: 15px
    .header__box
-      height: 400px
+      height: 548px
    .ser__box
       margin-top: 30px
    h2 
-      font-size: 26px
+      font-size: 25px
       line-height: 33px
    .ser .ser__item
-      width: 100%
+      width: 47%
+      margin-bottom: 15px
+      padding: 6px
+   .ser__pic
+      height: 107px
+      margin-bottom: 6px
+   .ser__name
+      font-size: 12px
+      margin-bottom: -2px
+   .ser__text
+      font-size: 12px
+   .ser .ser__link
+      width: 23px !important
+      top: 0px
+      padding-left: 0px
+      height: 23px !important
    .header__arrows
       left: 40px
    .ser__btn
-      margin-top: 15px
+      width: 132px
+      height: 40px
+      margin-top: 37px
    .ser__wrap
-      flex-direction: column-reverse
-      padding: 20px 20px 40px
+      flex-direction: column
+      padding: 39px 35px
       height: auto
+      margin-top: 63px
    .ser__img
       width: 60%
-      margin-bottom: 20px
+      margin-bottom: 0px
+      margin-top: 40px
    .ser__title, .info__title 
       font-size: 26px
       line-height: 33px
-   .ser__order
-      margin-top: 30px
    .ser__sub
       font-size: 14px
+      line-height: 24px
    .ser__title
-      margin-bottom: 15px
+      margin-bottom: 10px
+      font-size: 25px
+      line-height: 35px
    .ser__order 
-      width: 100%
-   .item__arrows
-      position: absolute
-      bottom: 0
+      width: 172px 
+      height: 40px
+      font-size: 16px
+      margin-top: 23px
+   .ser__fig
+      display: block
+      width: 273px
       left: 50%
-      top: inherit
+      margin-left: -138px
+      bottom: -30px
+   .swiper4 
+      overflow: visible
    .item 
       padding: 9px 0 80px
       .container 
          position: relative
-   .item__arrows 
-      position: absolute
-      bottom: -65px
-      left: 50%
-      top: inherit
-      margin-left: -44px
+   // .item__arrows 
+   //    position: absolute
+   //    bottom: -65px
+   //    left: 50%
+   //    top: inherit
+   //    margin-left: -44px
    .item .swiper4
       margin-top: 30px
    .info__box
-      padding: 30px 20px 0px 
+      padding: 36px 32px 0px 38px
       flex-direction: column
+      .ser__order
+         width: 180px
+         height: 45px
    .info__img 
-      margin-top: 30px
-      width: 80%
-      margin-left: auto
+      margin: 40px auto 0
+      position: relative
+      left: -20px
+      width: 62%
+   .info__fig
+      display: block
+      width: 233px
+      left: 50%
+      margin-left: -109px
+      bottom: -14px
    .info
-      padding: 50px 0
+      padding: 36px 0 20px
    .footer .nav__btn
       height: 50px
    .footer__text, .footer__sub, .footer__com p
       font-size: 14px
+   .info__title
+      font-size: 30px
+      line-height: 40px
+   .info__text
+      font-size: 14px
+      margin-bottom: 27px
    .item .ser__pic
       height: 200px
    .ser__content
-      padding: 0 10px
+      padding: 0 7px
    .page .nav
       padding: 20px 0
    .services
@@ -662,6 +789,17 @@
    .view__add
       margin-top: 10px
       width: 100%
+      padding-right: 0
+      img
+         position: relative
+         right: 0
+         top: 0
+         margin: 3px 0 0 15px
+   .view_1, .view_2 
+      display: flex
+      align-items: center
+   .view_2 
+      padding-right: 0 !important
    .view__pic
       margin-bottom: 25px
       height: 270px
@@ -706,7 +844,7 @@
    .about__wrap
       margin-top: 60px
    .about__block
-      padding: 30px
+      padding: 30px !important
    .about__how h2
       font-size: 22px
       line-height: 30px
@@ -743,6 +881,17 @@
       top: 69%
       width: 90%
       padding: 60px 20px
+   .popup4, .popup5, .popup6, .popup7, .popup8, .popup9, .popup10, .popup11, .popup12, .popup13
+      top: 49%
+      width: 90%
+      padding: 60px 20px
+   .popup13 button
+      width: 100% !important
+   .popup4__flex
+      flex-direction: column 
+      align-items: flex-start
+   .popup4__flex .custom-checkbox + label
+      margin-bottom: 15px
    .popup3
       width: 90%
       padding: 60px 20px
@@ -799,5 +948,170 @@
       margin-right: 0
    .profile__sum
       white-space: nowrap
+   .blog__bottom 
+      a 
+         left: 0 !important
+         right: 0 !important
+   .blog__nav
+      left: 0
+   h1
+      font-size: 25px
+      line-height: 30px
+   .header__content p
+      max-width: 184px 
+      width: 100%
+   .swiper1 .swiper-slide_1:after
+      display: none
+   .header__btn
+      width: 128px
+      height: 40px
+      font-size: 16px
+      padding-bottom: 2px
+   .header, .item
+      .swiper-button-prev1, .swiper-button-prev4
+         width: 34px
+         height: 34px
+         margin-right: 0
+         flex: 1 0 auto 
+         max-width: 34px
+         .svg 
+            width: 14px
+   .header__arrows 
+      left: 50%
+      width: 80px
+      justify-content: space-between
+      margin-left: -40px
+      bottom: 24px
+   .header, .item
+      .swiper-button-next1, .swiper-button-next4
+         width: 34px
+         height: 34px
+         margin-right: 0
+         flex: 1 0 auto 
+         max-width: 34px
+         .svg 
+            width: 14px !important
+   .autoplay-progress, .autoplay-progress2
+      width: 34px
+      top: 0px
+      left: 45px
+      height: 34px
+      svg 
+         width: 40px
+         height: 40px
+         top: -5.5px
+   .autoplay-progress2
+      top: 6px
+      left: 44px
+      svg 
+         left: -5px
+         top: -4.5px
+   .nav 
+      .container
+         position: relative
+   .ser 
+      padding: 41px 0 40px
+   .item 
+      padding-bottom: 25px
+      .header-arr .svg
+         width: 34px
+      &__arrows 
+         top: -1px
+      .swiper-button-next4
+         left: 20px
+         top: 13px
+      .swiper4 
+         overflow: visible
+         width: 133%
+         .ser__pic
+            height: 141px
+         .item__name
+            font-size: 14px
+            line-height: 17px
+         .item__btn
+            margin-left: 7px
+   .footer
+      .nav__list, .nav__right
+         display: none
+      .nav__box
+         border-bottom: none
+         padding-bottom: 0
+      .footer__text
+         font-size: 16px
+         width: 100%
+         margin-bottom: 15px
+      &__left
+         flex-direction: initial !important
+         flex-wrap: wrap
+         justify-content: space-between
+         text-align: center
+         width: 100%
+         max-width: 228px 
+      &__bottom 
+         margin-top: 14px
+         position: relative
+      &__link 
+         margin-bottom: 0
+         &:first-child
+            margin-right: 10px
+      &__sub 
+         position: absolute
+         bottom: -67px
+         left: 50%
+         width: 300px
+         margin-left: -150px
+         font-size: 16px
+      .footer__com p
+         font-size: 16px
+      &__com 
+         margin-top: 29px
+         width: 100%
+         justify-content: center
+         padding: 15px 0
+         border-top: 1px solid #EAEAEA
+         border-bottom: 1px solid #EAEAEA
+      &__mob 
+         display: flex !important
+         height: 50px
+         width: 208px
+         margin: 75px auto 0
+   .page 
+      .menu-btn
+         top: 27px !important
+   .menu__top p, .menu__arr
+      display: none
+   .menu__ava img
+      width: 35px
+      height: 35px
+   .header--lang
+      position: absolute
+      right: 0
+      top: 0
+      width: 35px
+   .menu .nav__list
+      margin-top: 100px
+   .menu .footer__left
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      width: 100%
+      max-width: 100%
+      p 
+         width: 100%
+         text-align: left
+   .menu .footer__left .footer__link
+      height: 31px
+      img 
+         height: 100%
+         width: 100%
+   .bread a:last-child
+      top: 0.5px
+      position: relative
+   .bread a:after
+      margin: 0 8px
+   .popup13 .popup6__title
+      font-size: 22px
+   .popup13 textarea
+      min-height: 200px
+      
 
-   
